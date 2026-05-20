@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.geminiupgradeqa/geminiupgradeqa-mcp",
-  "description": "Gemini Upgrade QA is a paid remote MCP for Gemini upgrade evals, prompt regression checks, model output diffs, blocking rules, and eval receipts.",
+  "description": "Catch Gemini model upgrade regressions before they reach customers.",
   "version": "1.0.0",
   "website_url": "https://geminiupgradeqa.clauxel.com/",
   "repository": {
