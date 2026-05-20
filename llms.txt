@@ -1,12 +1,15 @@
 # Gemini Upgrade QA MCP
 
-Paid remote MCP for Gemini upgrade evals, prompt regression checks, model output diffs, blocking rules, and eval receipts.
+Gemini Upgrade QA is a paid remote MCP for Gemini upgrade evals, prompt regression checks, model output diffs, blocking rules, and eval receipts.
 
 Website: https://geminiupgradeqa.clauxel.com/
+Docs pattern reference: https://github.com/clauxel/MiroFish
+Primary keyword: Gemini 2.5 upgrade eval MCP
+Type: MCP
+Default plan: Team
 MCP endpoint: https://geminiupgradeqa.clauxel.com/mcp
 Server card: https://geminiupgradeqa.clauxel.com/server-card.json
-Docs: https://github.com/clauxel/gemini-upgrade-qa-mcp
-
-Use case: Catch Gemini model upgrade regressions before they reach customers.
-Authentication: Bearer token required for production use.
+Registry name: com.clauxel.geminiupgradeqa/geminiupgradeqa-mcp
 Tools: run_gemini_upgrade_eval, compare_prompt_outputs, detect_model_regression, issue_upgrade_receipt, export_eval_audit
+
+Public boundary: docs-only repository; no production source code or secrets.
