@@ -2,47 +2,44 @@
 
 Catch Gemini model upgrade regressions before they reach customers.
 
-Paid remote MCP for Gemini upgrade evals, prompt regression checks, model output diffs, blocking rules, and eval receipts.
+Gemini Upgrade QA is a paid remote MCP for Gemini upgrade evals, prompt regression checks, model output diffs, blocking rules, and eval receipts.
 
-## Public Endpoints
+This is a public documentation project for Gemini Upgrade QA MCP. The structure is modeled after the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and public-safe architecture notes.
 
-- Website: https://geminiupgradeqa.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- MCP endpoint: https://geminiupgradeqa.clauxel.com/mcp
+## Start Here
+
+- Website: https://geminiupgradeqa.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=geminiupgradeqa_public_docs&utm_content=readme_primary_home
+- Pricing: https://geminiupgradeqa.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=geminiupgradeqa_public_docs&utm_content=readme_pricing
+- Checkout: https://geminiupgradeqa.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=geminiupgradeqa_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://geminiupgradeqa.clauxel.com/mcp
 - Server card: https://geminiupgradeqa.clauxel.com/server-card.json
 - Registry name: `com.clauxel.geminiupgradeqa/geminiupgradeqa-mcp`
+- Tools: `run_gemini_upgrade_eval`, `compare_prompt_outputs`, `detect_model_regression`, `issue_upgrade_receipt`, `export_eval_audit`
 
-## Access
+## Reading Order
 
-This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Public link reference](reference/links.md)
 
-```http
-Authorization: Bearer <token>
-```
+## Audience
 
-Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
+AI platform teams, prompt owners, QA leads, and release engineers.
 
-## Tools
+## Capabilities
 
-- `run_gemini_upgrade_eval`
-- `compare_prompt_outputs`
-- `detect_model_regression`
-- `issue_upgrade_receipt`
-- `export_eval_audit`
+- upgrade eval runner
+- prompt output comparison
+- regression detection
+- blocking rules
+- eval receipt export
 
-## Quick Start
+## Public-Safe Boundary
 
-1. Open the website and choose a plan.
-2. Create or request an API token.
-3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
-4. Send JSON-RPC requests with the bearer token.
-
-## Useful Links
-
-- Product page: https://geminiupgradeqa.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- Pricing: https://geminiupgradeqa.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
-- Server card: https://geminiupgradeqa.clauxel.com/server-card.json
-- MCP endpoint: https://geminiupgradeqa.clauxel.com/mcp
-
-## Status
-
-This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
+This repository does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
